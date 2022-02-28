@@ -1,0 +1,371 @@
+/* body formatting */
+body {
+  font-family: 'Catamaran', sans-serif;
+  font-size: 1rem;
+  display: inline;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px;
+  border: none;
+  padding: 0px;
+  position: relative;
+  width:100%;
+  min-width: 200px;
+  height: auto;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Catamaran', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.8rem;
+  letter-spacing: 0rem;
+  color: black;
+  flex: none;
+  flex-grow: 0;
+  margin: .5rem;
+  border: 1px solid red;
+  padding: .5rem;
+}
+
+h1 {
+  font-size: 2rem;
+  order: 0;
+}
+
+h2 {
+  font-size: 1.75rem;
+  order: 1;
+}
+
+h3 {
+  font-size: 1.5rem;
+  order: 2;
+}
+
+h4 {
+  font-size: 1.25rem;
+  order: 3;
+}
+
+h5 {
+  font-size: 1rem;
+  order: 4;
+}
+
+p {
+  font-family: 'Catamaran', sans-serif;
+  color: black;
+  font-size: 1rem;
+  padding: .5rem;
+  border: 1px solid red;
+  margin: .5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* header section */
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: static;
+  width: auto;
+  height: auto;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  background: #b8b8b8;
+  margin: 0rem;
+  border: 1px solid red;
+  padding: .5rem;
+  box-sizing: border-box;
+  flex: none;
+  align-self: auto;
+  flex-grow: 0;
+}
+
+header ul {
+  margin: .5rem;
+  border: 1px solid red;
+  padding: .5rem;
+  background: #C7C7CC;
+}
+
+header li {
+  display: inline-block;
+  margin: .5rem;
+  border: 1px solid red;
+  padding: .5rem 2rem;
+  color: black;
+  background-color: #FFFFFF;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width:100%;
+  margin: 0rem;
+  border: 1px solid red;
+  padding: 1rem;
+  height: auto;
+  left: 0;
+  top: 0;
+  flex: none;
+  align-self: normal;
+  flex-grow: 0;
+  background: white;
+  box-sizing: border-box;
+}
+
+.heroImg {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: static;
+  width: 400px;
+  height: auto;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 1rem;
+  border: 1px solid #FF3B30;
+  padding: 1rem;
+  background:#cccccc;
+}
+
+.heroImg button {
+  margin: 1rem;
+  border: 1px solid red;
+  padding: 1rem;
+  width: fit-content;
+  height: 3rem;
+  background-color: #3a3a3a;
+  color: white;
+}
+
+/* UX Skills Section */
+.mySkills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  border: 1px solid red;
+  padding: 2rem 6rem;
+  position: static;
+  width: auto;
+  height: auto;
+  left: 0px;
+  top: 1050px;
+  background: #FFFFFF;
+  box-sizing: border-box;
+  flex: none;
+  order: 2;
+  align-self: stretch;
+  flex-grow: 0;
+} 
+
+.flexContainer {
+  display: flex;
+  flex-direction: row;
+  align-items:flex-start;
+  margin: .5rem;
+  border: 1px solid red;
+  padding: .5rem;
+  width: auto;
+  height: auto;
+  position: static;
+  left: 0px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.flexItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: .5rem;
+  border: 1px solid #FF3B30;
+  padding: .5rem;
+  width: 300px;
+  height: auto;
+  background: #FFFFFF;
+  flex: auto;
+  order: 0;
+  flex-grow: 1;
+}
+
+.flexItem div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: auto;
+  margin: .5rem;
+  border: 1px solid red;
+  padding: .5rem;
+}
+
+.flexItem img {
+  position: static;
+  width: auto;
+  height: auto;
+  left: .5rem;
+  top: .5rem;
+  margin: .5rem;
+  border: 1px solid red;
+  padding: .5rem;
+  box-sizing: border-box;
+  flex: none;
+  order: 0;
+  align-self: auto;
+  flex-grow: 0;
+}
+/* My Work Section */
+.myWork {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0rem;
+  border: 1px solid red;
+  padding: 1rem;
+  background: #FFFFFF;
+}
+
+.workGrid {
+  display: grid;
+  grid-template-rows: 1fr 1fr; 
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "img h3 h3 ."
+    "img p p button"
+  ;
+  gap: 1rem;
+  align-items: center;
+  margin: 1rem .5rem;
+  border: 1px solid red;
+  padding: 1rem;
+  width: auto;
+  height: auto;
+  left: 1rem;
+  top: 1rem;
+}
+
+.workGrid > img {
+  grid-area: img;
+}
+.workGrid > h3 {
+  grid-area: h3;
+}
+.workGrid > p {
+  grid-area: p;
+}
+.workGrid > button {
+  grid-area: button;
+}
+
+.workGrid .project-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  border: 1px solid #FF3B30;
+  padding: 0px;
+  width: auto;
+  height: auto;
+  left: 1rem;
+  top: 1rem;
+  position: static;
+  box-sizing: border-box;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 1;
+}
+
+button {
+  margin: 1rem;
+  border: 1px solid red;
+  padding: .5rem 1rem;
+  align-content: center;
+  align-items: center;
+  width: auto;
+  height: 5rem;
+  background: #C2C2C2;
+  border-radius: 6px;
+}
+
+/* footer section */
+footer {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items:center;
+  padding: 1rem;
+  position: relative;
+  height: auto;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: #7a7a7a;
+  box-sizing: border-box;
+}
+
+footer ul {
+  border: 1px solid red;
+  background-color: #C2C2C2;
+  display: inline-block;
+  flex-direction: flex-start;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  position: static;
+  width: auto;
+  height: auto;
+  border: 1px solid #FF3B30;
+  box-sizing: border-box;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 1rem;
+}
+
+footer li {
+  border: 1px solid red;
+  background-color: #FFFFFF;
+  color: black;
+  display: inline-block;
+  padding: .5rem 2rem;
+  margin: 1rem;
+}
+
+/* media queries */
+@media only screen and (max-width:1000) {
+  .workGrid {
+    .workGrid {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr 1fr; 
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "img"
+        "h3"
+        "p"
+        "button"
+      ;
+    }
+}
