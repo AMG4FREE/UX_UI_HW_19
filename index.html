@@ -4,31 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/APP_ID">
     <link href="/css/style.css" type="text/css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/js/index.js"></script>
     <title>Andrew Grant | UX Portfolio</title>
 </head>
 
 <body>
+
     <header>
-        <img src="images/logo.png" alt="logo">
-        <ul>
-            <li>ABOUT</li>
-            <li>SKILLS</li>
-            <li>WORK</li>
-            <li>CONTACT</li>
-        </ul>
+        <div class="logo">
+            <img src="images/logo.png" alt="logo">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <section class="hero">
-      <div class="heroImg">
-        <img src="images/placeholder_picture.png" alt="placeholder_picture">
-        <h1>Andrew Grant</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie phasellus mattis sed suscipit phasellus. Velit tincidunt quisque habitant ipsum vitae mauris lectus semper fermentum. Tempor, maecenas enim amet odio egestas amet, sed. Dignissim felis sit egestas pellentesque morbi vulputate turpis. Leo id imperdiet dolor libero platea euismod.</p>
-        <button type="button">Download Resume</button>
+
+        <div class="heroImg">
+            <img src="images/placeholder_picture.png"   alt="placeholder_picture">
+        </div>
+
+        <div class="content-frame">
+            <h1>Andrew Grant</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie phasellus mattis sed suscipit phasellus. Velit tincidunt quisque habitant ipsum vitae mauris lectus semper fermentum. Tempor, maecenas enim amet odio egestas amet, sed. Dignissim felis sit egestas pellentesque morbi vulputate turpis. Leo id imperdiet dolor libero platea euismod.</p>
+            <button type="button" class="test">Download Resume</button>
+        </div>
+        
       </div>
     </section>
 
@@ -148,5 +163,5 @@
 
 </body>
 
-
+<script src="/js/index.js"></script>
 </html>

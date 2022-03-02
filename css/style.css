@@ -5,19 +5,18 @@ body {
   display: inline;
   flex-direction: column;
   align-items: center;
-  margin: 0px;
+  margin: 0;
   border: none;
-  padding: 0px;
+  padding: 0;
   position: relative;
   width:100%;
   min-width: 200px;
   height: auto;
 }
 
-h1, h2, h3, h4 {
-  font-family: 'Catamaran', sans-serif;
+h1, h2, h3, h4, h5, p {
   font-style: normal;
-  font-weight: bold;
+  font-weight: normal;
   text-align: center;
   line-height: 1.8rem;
   letter-spacing: 0rem;
@@ -31,40 +30,39 @@ h1, h2, h3, h4 {
 
 h1 {
   font-size: 2rem;
+  font-weight: bolder;
   order: 0;
 }
 
 h2 {
   font-size: 1.75rem;
+  font-weight: bold;
   order: 1;
 }
 
 h3 {
   font-size: 1.5rem;
+  font weight: normal;
   order: 2;
 }
 
 h4 {
   font-size: 1.25rem;
+  font-weight: normal;
   order: 3;
 }
 
 h5 {
   font-size: 1rem;
+  font-weight: normal;
   order: 4;
 }
 
 p {
-  font-family: 'Catamaran', sans-serif;
-  color: black;
   font-size: 1rem;
+  margin: .5rem 1rem;
+  /* border: 1px solid red; */
   padding: .5rem;
-  border: 1px solid red;
-  margin: .5rem;
-}
-
-a {
-  text-decoration: none;
 }
 
 /* header section */
@@ -81,7 +79,7 @@ header {
   top: 0px;
   background: #b8b8b8;
   margin: 0rem;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   padding: .5rem;
   box-sizing: border-box;
   flex: none;
@@ -89,22 +87,72 @@ header {
   flex-grow: 0;
 }
 
-header ul {
-  margin: .5rem;
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  left: auto;
+  top: auto;
+  /* background: black; */
+  margin: 0rem;
   border: 1px solid red;
-  padding: .5rem;
-  background: #C7C7CC;
+  padding: .75rem;
 }
 
-header li {
+nav {
+  /* margin: 1rem; */
+  /* border: 1px solid red; */
+  /* padding: 1rem; */
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0rem;
+  border: 1px solid red;
+  padding: .5rem;
+  text-align: center;
+  font-weight: bold;
+  /* background: #ebebeb; */
+  position: static;
+  width:fit-content;
+  height: auto;
+  right: 0px;
+  top: auto;
+  flex: none;
+  order: 1;
+  flex-grow: 1;
+}
+
+li {
   display: inline-block;
   margin: .5rem;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   padding: .5rem 2rem;
   color: black;
   background-color: #FFFFFF;
   font-weight: bold;
+  border-radius: 8px;
 }
+
+li:hover {
+  /* border-bottom: 1px solid lightgrey; */
+  background-color: #3a3a3a;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  text-transform: uppercase;
+}
+
 
 /* Hero Section */
 .hero {
@@ -117,7 +165,6 @@ header li {
   margin: 0rem;
   border: 1px solid red;
   padding: 1rem;
-  height: auto;
   left: 0;
   top: 0;
   flex: none;
@@ -139,9 +186,36 @@ header li {
   order: 0;
   flex-grow: 0;
   margin: 1rem;
-  border: 1px solid #FF3B30;
+  /* border: 1px solid #FF3B30; */
   padding: 1rem;
   background:#cccccc;
+}
+
+.heroImg img {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align
+}
+
+.heroImg .content-frame {
+/* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px 16px 16px;
+  
+  position: static;
+  width: 514px;
+  height: 633px;
+  left: 798px;
+  top: 32px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 0rem 4rem;
 }
 
 .heroImg button {
@@ -354,8 +428,8 @@ footer li {
   margin: 1rem;
 }
 
-/* media queries */
-@media only screen and (max-width:1000) {
+/* mobile screens, or any screen with a max width of 480px */
+@media only screen and (max-width:480) {
   .workGrid {
     .workGrid {
       display: grid;
@@ -368,4 +442,22 @@ footer li {
         "button"
       ;
     }
+  }
+}
+
+/* desktop screens or any screen with a minimum width of 480px */
+@media only screen and (min-width:480) {
+  .workGrid {
+    .workGrid {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr 1fr; 
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "img"
+        "h3"
+        "p"
+        "button"
+      ;
+    }
+  }
 }
