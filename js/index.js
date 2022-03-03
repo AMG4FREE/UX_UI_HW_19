@@ -1,16 +1,92 @@
+// jQuery 
+// $(function () {
+
 $(document).ready(function(){
     console.log("Your index.js file has loaded correctly!");
-    
-    $("button").click(function(){
-        $(".test").hide();
+
+    // button animation javascript
+
+    $(".btn-6")
+        .on("mouseenter", function (e) {
+        var parentOffset = $(this).offset(),
+            relX = e.pageX - parentOffset.left,
+            relY = e.pageY - parentOffset.top;
+        $(this).find("span").css({ top: relY, left: relX });
+        });
+        .on("mouseout", function (e) {
+        var parentOffset = $(this).offset(),
+            relX = e.pageX - parentOffset.left,
+            relY = e.pageY - parentOffset.top;
+        $(this).find("span").css({ top: relY, left: relX });
+        });
+    $("[href=#]").click(function () {
+        return false;
+        });
     });
+  
+    
+    // header/footer navigation tabs javascript
+
+    $("li")
+        .on("mouseenter", function () {
+            $(this).css("background-color", "lightgray");
+        });
+        .on("mouseleave", function () {
+            $(this).css("background-color", "lightblue");
+        });
+        $("[href=#]").click(function () {
+            $(this).hide();
+        });
+    });
+
+
+// javascript animation for scrolling down page
+
+    $('a[href^="#"]').on('click',function (e) {
+        e.preventDefault();
+        var target = this.hash;
+        var $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+        }, 500, 'swing', function () {
+            // window.location.hash = target;
+        });
+    });
+
+
+    //     $(this).find('a').stop().animate({ 
+    //         color: '#01216D', 
+    //         backgroundColor: '#ffffff'}, 
+    //         100);
+    // }, function () {
+    //     $(this).find('a').stop().animate({ 
+    //         color: '#ffffff', 
+    //         backgroundColor: '#01216D'}, 
+    //         800);
+    
+    // $(".navbar #About").click(function(){    
+    //     $(this).hide();
+    // });
+
+    // $(".navbar #Skills").click(function(){
+    //     $(this).hide();
+    // });
+
+    // $(".navbar #Work").click(function(){
+    //     $(this).hide();
+    // });
+
+    // $(".navbar #Contact").click(function(){
+    //     $(this).hide();
+    // });
+
+    // $("button").click(function(){
+    //     $(".test").hide();
+    // });
 
     // $(".navbar").on('click', function(){
     //     $(header nav ul).toggleClass("open");
     // });
-
-});
-
 
 // Basic jQuery syntax
 // $(selector).action()
@@ -21,15 +97,15 @@ $(document).ready(function(){
 
 // $(".test").hide() - hides all elements with class="test".
 
-// $("#test").hide() - hides the element with id="test".
+// // $("#test").hide() - hides the element with id="test".
 
-$("li").on("click", function(){
-    console.log("You clicked a link");
-    $(".fadeMe").fadeToggle("slow");
+// $(".navbar li").on("click", function(){
+//     console.log("You clicked a link");
+//     $(".fadeMe").fadeToggle("slow");
 
-// jQuery Selectors:
-// 
-// #id selector:            $("#test")
+// // jQuery Selectors:
+// // 
+// // #id selector:            $("#test")
 // .class selector:         $(".test")
 // $("*")	                Selects all elements	
 // $(this)	                Selects the current HTML element	

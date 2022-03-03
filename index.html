@@ -1,164 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/APP_ID">
+
+    <!-- load CSS styles -->
     <link href="/css/style.css" type="text/css" rel="stylesheet">
+
+    <!-- Google Fonts - Catamaran -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Google Hosted Libraries - jQuery 3.x snippet -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="/js/index.js"></script>
+
+    <!-- Document title -->
     <title>Andrew Grant | UX Portfolio</title>
 </head>
 
+
 <body>
 
-    <header>
-        <div class="logo">
-            <img src="images/logo.png" alt="logo">
-        </div>
 
-        <nav>
-            <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="hero">
-
-        <div class="heroImg">
-            <img src="images/placeholder_picture.png"   alt="placeholder_picture">
-        </div>
-
-        <div class="content-frame">
-            <h1>Andrew Grant</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie phasellus mattis sed suscipit phasellus. Velit tincidunt quisque habitant ipsum vitae mauris lectus semper fermentum. Tempor, maecenas enim amet odio egestas amet, sed. Dignissim felis sit egestas pellentesque morbi vulputate turpis. Leo id imperdiet dolor libero platea euismod.</p>
-            <button type="button" class="test">Download Resume</button>
-        </div>
-        
-      </div>
-    </section>
-
-    <section class="mySkills">
-        <div>
-            <h1>My UX Skills</h1>
-        </div>
-
-        <div class="flexContainer">
-            <div class="flexItem">
-                <div>
-                    <img src="images/placeholder_picture.png" alt="placeholder_picture">
-                </div>
-                <div>
-                    <h3>User Research</h3>
-                </div>
-                <div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie phasellus mattis sed suscipit phasellus. Velit tincidunt quisque habitant ipsum vitae mauris lectus semper fermentum. Tempor, maecenas enim amet odio egestas amet, sed. Dignissim felis sit egestas pellentesque morbi vulputate turpis. Leo id imperdiet dolor libero platea euismod.</p>
-                </div>
-            </div>
-    
-            <div class="flexItem">
-                <div>
-                    <img src="images/placeholder_picture.png" alt="placeholder_picture">
-                </div>
-                <div>
-                    <h3>User Interface Design</h3>
-                </div>
-                <div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie phasellus mattis sed suscipit phasellus. Velit tincidunt quisque habitant ipsum vitae mauris lectus semper fermentum. Tempor, maecenas enim amet odio egestas amet, sed. Dignissim felis sit egestas pellentesque morbi vulputate turpis. Leo id imperdiet dolor libero platea euismod.</p>
-                </div>
-            </div>
-    
-            <div class="flexItem">
-                <div>
-                    <img src="images/placeholder_picture.png" alt="placeholder_picture">
-                </div>
-                <div>
-                    <h3>Web Development</h3>
-                </div>
-                <div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie phasellus mattis sed suscipit phasellus. Velit tincidunt quisque habitant ipsum vitae mauris lectus semper fermentum. Tempor, maecenas enim amet odio egestas amet, sed. Dignissim felis sit egestas pellentesque morbi vulputate turpis. Leo id imperdiet dolor libero platea euismod.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-<section class="myWork">
-    <h1>My Work</h1>
-
-    <div class="workGrid">
-
-        <div class="project-image">
-            <img src="images/placeholder_picture.png" alt="placeholder_picture">
-        </div>
-
-        <div class="project-heading">
-            <h3>Mobile Prototype Project Title</h3>
-        </div>
-
-        <div class="project-text">
-            <p>Velit tincidunt quisque habitant ipsum vitae mauris lectus semper fermentum. Tempor, maecenas enim amet odio egestas amet, sed. </p>
-        </div>
-        
-        <div class="project-button">
-            <button type="button"><h4>View Project</h4></button>
-        </div> 
-    
+    <!-- top tab toolbar navigation -->
+<header>
+    <div class="logo" id="header">
+        <img src="images/logo.png" alt="logo">
     </div>
 
-        <div class="workGrid">
+    <div class="navbar" id="spacer">
+    </div>
 
-            <div class="project-image">
-                <img src="images/placeholder_picture.png" alt="placeholder_picture">
-            </div>
-                <h3>Mobile Prototype Project Title</h3>
-                <p>Velit tincidunt quisque habitant ipsum vitae mauris lectus semper fermentum. Tempor, maecenas enim amet odio egestas amet, sed. </p>
-            <div class="project-button">
-                <button type="button"><h4>View Project</h4></button>
-            </div> 
+    <nav class="navbar" id="header">
+        <ul>
+            <li class="nav-item" id="Skills"><a href="#">Skills</a></li>
+            <li class="nav-item" id="Work"><a href="#">Work</a></li>
+            <li class="nav-item" id="Contact"><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+    <!-- hero-section (make into jumbotron) -->
+<section id="hero">
+
+<div class="heroCard">
+    <div class="img-frame">
+        <img class="profile-photo" src="images/placeholder_picture.png" alt="Photo of Me!">
+    </div>
+
+    <div class="content-frame">
+        <h3>Hi, I'm... </h3>
+        <h1>Andrew Maxwell Grant</h1>
+        <h3>A Creative UX Designer based in Seattle, Washington.</h3>
+        <p>Et metus volutpat viverra in suscipit. Fermentum libero lectus aliquet non mattis metus.</p>
         
-        </div>
+        <a class="btn-6" href="#"><span>Download Resume</span></a>
 
-        <div class="workGrid">
-
-            <div class="project-image">
-                <img src="images/placeholder_picture.png" alt="placeholder_picture">
-            </div>
-
-            <div class="project-heading">
-                <h3>Mobile Prototype Project Title</h3>
-            </div>
-
-            <div class="project-text">
-                <p>Velit tincidunt quisque habitant ipsum vitae mauris lectus semper fermentum. Tempor, maecenas enim amet odio egestas amet, sed. </p>
-            </div>
-            
-            <div class="project-button">
-                <button type="button"><h4>View Project</h4></button>
-            </div> 
-        
-        </div>
-
-    <h2>View All Projects</h2>
-
+    </div>
+</div>
 </section>
 
 
+    <!-- My Skills section -->
+<section id="mySkills">
+
+<div class="section-title" id="skills">
+    <h1>UX Skills</h1>
+</div>
+
+<div class="flexContainer">
+
+    <div class="flexItem">
+        <div>
+            <img src="images/placeholder_picture.png" alt="placeholder_picture">
+        </div>
+        <div>
+            <h3>User Research</h3>
+        </div>
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis sed suscipit phasellus, et tesecundit viva repsilium Toto bogodo. Rudi Tudy, freisch end frooty. tincidunt quisque habitant ipsum vitae mauris lectus fermentum. Tempor, maecenas </p>
+        </div>
+    </div>
+    
+    <div class="flexItem">
+        <div>
+            <img src="images/placeholder_picture.png" alt="placeholder_picture">
+        </div>
+        <div>
+            <h3>User Interface Design</h3>
+        </div>
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. pellentesque enim amet odio egestas amet, sed. Dignissim felis sit run to it, the French! egestas  morbi vulputate turpis. Leo id imperdiet dolor libero platea euismod.</p>
+        </div>
+    </div>
+    
+    <div class="flexItem">
+        <div>
+            <img src="images/placeholder_picture.png" alt="placeholder_picture">
+        </div>
+        <div>
+            <h3>Web Development</h3>
+        </div>
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing eliphellus donot Berganian Lorax peepdoodle freisch end torpinilisky French doodoo frowax pestilence framer forman tom foolery backup pressed.</p>
+        </div>
+    </div>
+    
+</div>
+</section>
+
+    <!-- Portfolio Work section -->
+<section id="myWork">
+
+    <div class="section-title" id="work">
+        <h1>Projects</h1>
+    </div>
+
+
+    <div class="workgrid">
+        <div class="project1">
+            <div class="image1">
+                <img src="images/placeholder_picture.png" alt="placeholder_picture">
+            </div>
+            <div class="heading1">
+                <h3>Project Title 1</h3>
+            </div>
+            <div class="paragraph1">
+                <p>Velit tincidunt quisque habitant ipsum vitae mauris lectus semper fermentum. Tempor, maecenas enim amet odio egestas amet, sed. </p>
+            </div>
+            <div class="button1">
+                <a class="btn-6" href="#">
+                    <span>View Project</span>
+                </a>
+            </div>
+        </div>
+        <div class="project2">
+            <div class="image2">
+                <img src="images/placeholder_picture.png" alt="placeholder_picture">
+            </div>
+            <div class="heading2">
+                <h3>Project Title 1</h3>
+            </div>
+            <div class="paragraph2">
+                <p>Velit tincidunt quisque habitant ipsum vitae mauris lectus semper fermentum. Tempor, maecenas enim amet odio egestas amet, sed. </p>
+            </div>
+            <div class="button2">
+                <a class="btn-6" href="#">
+                    <span>View Project</span>
+                </a>
+            </div>
+        </div>
+        <div class="project3">
+            <div class="image3">
+                <img src="images/placeholder_picture.png" alt="placeholder_picture">
+            </div>
+            <div class="heading3">
+                <h3>Project Title 1</h3>
+            </div>
+            <div class="paragraph3">
+                <p>Velit tincidunt quisque habitant ipsum vitae mauris lectus semper fermentum. Tempor, maecenas enim amet odio egestas amet, sed. </p>
+            </div>
+            <div class="button3">
+                <a class="btn-6" href="#">
+                    <span>View Project</span>
+                </a>
+            </div>
+        </div>      
+    </div>
+
+<!-- call to action contact form -->
+    <div class="cta" id="work">
+        <a class="btn-6" href="#"><span>View All Projects</span></a>
+    </div>
+
+</section>
+
+<section id="cta">
+    <form id="contact" action="" method="post">
+
+        <h3>Let's get in touch!</h3>
+        
+        <fieldset>
+          <input placeholder="name" type="text" tabindex="1" required autofocus>
+        </fieldset>
+        
+        <fieldset>
+          <input placeholder="email" type="email" tabindex="2" required>
+    </fieldset>
+        
+    <fieldset>
+    <input placeholder="phone number" type="tel" tabindex="3" required>
+    </fieldset>
+        
+    <fieldset>
+      <textarea placeholder="What would you like to say?" tabindex="5" required></textarea>
+    </fieldset>
+        
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit   </button>
+    </fieldset>
+    </form>
+</section>
+
 <footer>
-    <ul>
-        <li>ABOUT</li>
-        <li>SKILLS</li>
-        <li>WORK</li>
-        <li>CONTACT</li>
-    </ul>
+    <div class="logo" id="footer">
+        <img src="images/logo.png" alt="logo">
+    </div>
+
+    <div class="navbar" id="spacer">
+        <!-- empty div. used as spacer between flex items -->
+    </div>
+
+    <nav class="navbar" id="footer">
+        <ul>
+            <li class="nav-item" id="Skills"><a href="#">Skills</a></li>
+            <li class="nav-item" id="Work"><a href="#">Work</a></li>
+            <li class="nav-item" id="Contact"><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
 </footer>
 
 </body>
